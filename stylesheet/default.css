@@ -12,7 +12,6 @@
 }
 
 header{
-    display: inherit;
     background-color: #330000;
     background-repeat: no-repeat;
     background-position: left;
@@ -27,6 +26,9 @@ header{
 }
 
 nav{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
     color: #999999;
     width: 100%;
     height: 44px;
@@ -54,16 +56,18 @@ nav ul{
 }
 
 main{
-    position: relative;
-    margin-left: 3em;
+    position: static;
+    margin-top: 5em;
+    margin: 3em;
 
 }
 
 footer{
-    position: relative;
+    position: static;
     background-color: #330000;
     color: #FFFFFF;
     text-align: center;
+    vertical-align: center;
     width: 100%;
     height: auto;
     padding: 1em;
@@ -85,6 +89,7 @@ footer{
 }
 
 #wrap-body{  
+    padding: 1em;
     min-height: 25em;
 }
 
@@ -105,7 +110,7 @@ footer{
     padding-right: 10em;
 }
 
-.grubhub-logo {
+.logo {
   height: 50px;
 }
 
@@ -113,7 +118,7 @@ footer{
     display: none;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1200px){
     .desktop{
         display: none;
     }
@@ -121,11 +126,25 @@ footer{
     .mobile{
         display: contents;
     }
+
+    #subtitle{
+        display: none;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        padding: 1em;
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
     
-    header{
-        height: 200px;
-        padding-left: 2em;
-        padding-right 2em;
+    .body-elements{
+        display: flex;
+        justify-content: center;
     }
     
     .hours-of-operation {
