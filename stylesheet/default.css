@@ -25,6 +25,19 @@ header{
     padding: 5px 0;
 }
 
+#title{
+    display: inline;
+    color: #FFCC00;
+    font: Times New Roman;
+    padding: 1em;
+}
+
+#subtitle{
+    display: inline;
+    color: #FFFFFF;
+    font: Times New Roman;
+}
+
 nav{
     display: flex;
     justify-content: center;
@@ -59,7 +72,6 @@ main{
     position: static;
     margin-top: 5em;
     margin: 3em;
-
 }
 
 footer{
@@ -74,44 +86,9 @@ footer{
     
 }
 
-#title{
-    display: inline;
-    color: #FFCC00;
-    font: Times New Roman;
-    padding: 1em;
-    
-}
-
-#subtitle{
-    display: inline;
-    color: #FFFFFF;
-    font: Times New Roman;
-}
-
-#wrap-body{  
-    padding: 1em;
-    min-height: 25em;
-}
-
-#description{
-    font-size: 24px;
-    text-align: center;
-}
-
-.hours-of-operation {
-    float: left;
-    padding: 1em;
-    padding-left: 10em;
-}
-
-.contact-info {
-    float: right;
-    padding: 1em;
-    padding-right: 10em;
-}
-
 .logo {
   height: 50px;
+  background-color: white;
 }
 
 .mobile{
@@ -131,33 +108,17 @@ footer{
         display: none;
     }
 
+    nav{
+        padding-bottom: 3em;
+    }
+
     #navbar{
         display: flex;
         justify-content: center;
         text-align: center;
         vertical-align: middle;
-        padding: 1em;
         font-size: 20px;
         width: 100%;
-        margin: 0 auto;
-    }
-    
-    .body-elements{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .hours-of-operation {
-        float: none;
-        padding: 1em;
-        padding-left: 5em;
-        padding-right: 5em;
-    }
-
-    .contact-info {
-        float: none;
-        padding: 1em;
-        padding-left: 5em;
-        padding-right: 5em;
+        line-height: normal;
     }
 }

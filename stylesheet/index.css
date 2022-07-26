@@ -1,13 +1,52 @@
 /* Specific CSS for the index.html page */
 
+#wrap-body{  
+    padding: 1em;
+    min-height: 25em;
+}
+
+#description{
+    font-size: 24px;
+    text-align: center;
+}
+
+.hours-of-operation {
+    float: left;
+    padding: 1em;
+    padding-left: 10em;
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
+.contact-info {
+    float: right;
+    padding: 1em;
+    padding-right: 10em;
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
 th{
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 24px;
 }
 
-table{
-    text-align: center;
-    padding-bottom: 1em;
-    font-size: 20px;
+@media only screen and (max-width: 1200px){
+    .body-elements{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hours-of-operation {
+        float: none;
+        padding: 1em;
+    }
+
+    .contact-info {
+        float: none;
+        padding: 1em;
+    }
 }
